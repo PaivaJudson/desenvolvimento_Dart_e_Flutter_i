@@ -6,8 +6,5 @@ class Pessoa{
 
 }
 
-main(){
-  
-}
 
 

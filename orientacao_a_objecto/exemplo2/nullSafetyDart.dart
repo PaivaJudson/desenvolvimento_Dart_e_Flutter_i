@@ -7,4 +7,12 @@ class Pessoa{
 }
 
 
+main(){
+
+  Pessoa joao = Pessoa(nome: 'Judson',
+                       sobreNome: 'Paiva' );
+
+  print(joao.nome);
+
+}
 

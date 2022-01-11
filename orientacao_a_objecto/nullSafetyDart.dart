@@ -1,6 +1,6 @@
 class Pessoa{
-  String? nome;
-  String? sobreNome;
+  late String nome;
+  late String sobreNome;
 
   Pessoa(){
     this.nome = "Judson";

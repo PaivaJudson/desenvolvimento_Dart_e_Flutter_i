@@ -1,18 +1,18 @@
 class Pessoa{
-  String nome;
+  late String _nome;
   String sobreNome;
 
-  Pessoa({required this.nome, required this.sobreNome});
+  get nome => this._nome;
+  set nome(n) => this._nome = n;
+
+  Pessoa({required this.sobreNome});
 
 }
 
-
 main(){
 
-  Pessoa joao = Pessoa(nome: 'Judson',
-                       sobreNome: 'Paiva' );
+  Pessoa joao = Pessoa(nome: 'Judson', sobreNome: 'Paiva' );
 
   print(joao.nome);
-
 }
 

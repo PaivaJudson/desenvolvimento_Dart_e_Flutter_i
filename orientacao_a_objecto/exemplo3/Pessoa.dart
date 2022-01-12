@@ -19,6 +19,9 @@ main(){
 
   Pessoa p1 = Pessoa();
 
+  p1.nome = "Judson Paiva";
+  p1.idade = 27;
+  p1.altura = 1.70;
 
 
 

@@ -4,6 +4,11 @@ class Pessoa{
   late int idade;
   late double altura;
 
+  Pessoa(String nome, int idade, double altura){
+    this.nome = nome;
+    this.idade = idade;
+    this.altura = altura;
+  }
 
   void dormir(){
     print("${this.nome} está dormindo");
@@ -23,6 +28,8 @@ main(){
   p1.idade = 27;
   p1.altura = 1.70;
 
-
+  print("O "+p1.nome+" Tem ${p1.idade} anos e mede ${p1.altura}");
+  p1.aniversario();
+  print("O "+p1.nome+" Tem ${p1.idade} anos e mede ${p1.altura}");
 
 }

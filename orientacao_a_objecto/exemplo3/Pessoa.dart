@@ -1,4 +1,4 @@
-class Pessoa{
+class Pessoa {
 
   late String nome;
   late int idade;
@@ -21,6 +21,8 @@ class Pessoa{
     this.dormir();
   }
 
+  Pessoa.empty();
+
   void dormir(){
     print("${this.nome} está dormindo");
   }
@@ -39,7 +41,9 @@ main(){
   p1.idade = 27;
   p1.altura = 1.70;
   */
-  Pessoa p2 = new Pessoa("Leonor José", 25, 1.30);
+  Pessoa p1 = Pessoa.empty(); // fez-se o uso do constructor named 
+
+  Pessoa p2 = new Pessoa("Leonor José", 25, 1.30);   // fez-se o uso do constructor unnamed
   print("A "+p2.nome+" Tem ${p2.idade} anos e mede ${p2.altura}");
   p2.aniversario();
   print("A "+p2.nome+" Tem ${p2.idade} anos e mede ${p2.altura}");

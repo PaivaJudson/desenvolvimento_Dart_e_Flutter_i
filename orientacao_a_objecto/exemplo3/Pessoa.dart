@@ -4,11 +4,16 @@ class Pessoa{
   late int idade;
   late double altura;
 
+  // modelo 1 de constructor
+  /*
   Pessoa(String nome, int idade, double altura){
     this.nome = nome;
     this.idade = idade;
     this.altura = altura;
   }
+  */
+
+  Pessoa(this.nome, this.idade, this.altura);
 
   void dormir(){
     print("${this.nome} está dormindo");

@@ -14,7 +14,7 @@ class Animal{
   }
 
   void fazerSom(){
-    print("Fez algum som");
+    print("$nome Fez algum som");
   }
 
 }
@@ -37,8 +37,11 @@ class Cachorro extends Animal{
 
   @override
   void fazerSom(){
-    print("Au, au, au, au");
+    print("$nome fez Au, au, au, au");
   }
+
+  @override
+  String toString() => "Cachorro | Nome: $nome, Peso: $peso, Fofura: $fofura";
 
 }
 
@@ -52,6 +55,13 @@ class Gato extends Animal{
 
   bool estaAmigavel() => true;
 
+  @override
+  void fazerSom(){
+    print("$nome fez Miauuuuuuuuuuu");
+  }
+
+  @override
+  String toString() => "Cachorro | Nome: $nome, Peso: $peso";
 }
 
 /* 
@@ -66,9 +76,11 @@ void main(){
   c1.fazerSom();
   c1.comer();
   c1.brincar();
+  print(c1.toString());
 
   g1.fazerSom();
   g1.comer();
   print("Está amigável?  ${g1.estaAmigavel()}");
+  print(g1);
 
 }

@@ -22,14 +22,15 @@ class Pessoa{
 
 main(){
 
-  Pessoa p1 = Pessoa();
-
+  /*
+  Pessoa p1 = new Pessoa();
   p1.nome = "Judson Paiva";
   p1.idade = 27;
   p1.altura = 1.70;
-
-  print("O "+p1.nome+" Tem ${p1.idade} anos e mede ${p1.altura}");
-  p1.aniversario();
-  print("O "+p1.nome+" Tem ${p1.idade} anos e mede ${p1.altura}");
+  */
+  Pessoa p2 = new Pessoa("Leonor José", 25, 1.30);
+  print("A "+p2.nome+" Tem ${p2.idade} anos e mede ${p2.altura}");
+  p2.aniversario();
+  print("A "+p2.nome+" Tem ${p2.idade} anos e mede ${p2.altura}");
 
 }

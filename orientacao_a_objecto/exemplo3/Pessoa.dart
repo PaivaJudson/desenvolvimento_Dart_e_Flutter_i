@@ -15,6 +15,12 @@ class Pessoa{
 
   Pessoa(this.nome, this.idade, this.altura);
 
+  Pessoa.nascer(this.nome, this.altura){
+    this.idade = 0;
+    print("$nome nasceu...");
+    this.dormir();
+  }
+
   void dormir(){
     print("${this.nome} está dormindo");
   }
@@ -37,5 +43,10 @@ main(){
   print("A "+p2.nome+" Tem ${p2.idade} anos e mede ${p2.altura}");
   p2.aniversario();
   print("A "+p2.nome+" Tem ${p2.idade} anos e mede ${p2.altura}");
+
+  Pessoa p3 = Pessoa.nascer("Ageu Paiva", 0.40);
+  print(p3.nome);
+  print(p3.idade);
+
 
 }
